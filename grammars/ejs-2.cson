@@ -1,0 +1,79 @@
+# If this is your first time writing a language grammar, check out:
+#   - https://flight-manual.atom.io/hacking-atom/sections/creating-a-grammar/
+
+'scopeName': 'source.ejs-2'
+'name': 'EJS-2'
+'fileTypes': [
+  'ejs'
+]
+'patterns': [
+  {
+    'begin': '<%#'
+    'beginCaptures':
+      '0':
+        'name': 'punctuation.definition.comment.begin.embedded.js'
+    'end': '%>'
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.comment.end.embedded.js'
+    'name': 'ejs.comment'
+  }
+  {
+    'begin': '<%-'
+    'beginCaptures':
+      '0':
+        'name': 'punctuation.definition.tag.buffer.output.unescaped.begin'
+    'end': '%>'
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.tag.buffer.output.unescaped.end'
+    'patterns': [
+      {
+        'include':'source.js'
+      }
+    ]
+    'name': 'ejs.unescaped.output'
+  }
+  {
+    'begin': '<%='
+    'beginCaptures':
+      '0':
+        'name': 'punctuation.definition.tag.buffer.output.escape.begin'
+    'end': '%>'
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.tag.buffer.output.escape.end'
+    'patterns': [
+      {
+        'include':'source.js'
+      }
+    ]
+    'name': 'ejs.escape.output'
+  }
+  {
+    'begin': '<% ([^%>]+)'
+    'beginCaptures':
+      '0':
+        'name': 'punctuation.definition.tag.embedded.js.begin'
+      '1':
+        'name':'embedded.js'
+        'patterns':[
+          {
+            'include':'source.js'
+          }
+        ]
+    'end': '%>'
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.tag.embedded.js.end'
+#   'patterns': [
+#      {
+#        'include':'source.js'
+#      }
+#    ]
+    'name': 'ejs.embedded.js'
+  }
+  {
+    'include': 'text.html.basic'
+  }
+]
