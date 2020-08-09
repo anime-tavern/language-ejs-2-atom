@@ -16,39 +16,39 @@
     'endCaptures':
       '0':
         'name': 'punctuation.definition.comment.end.embedded.js'
-    'name': 'ejs.comment'
+    'name': 'ejs.js.comment'
   }
   {
     'begin': '<%-'
     'beginCaptures':
       '0':
-        'name': 'punctuation.definition.tag.buffer.output.unescaped.begin'
+        'name': 'punctuation.definition.tag.buffer.js.output.unescaped.begin'
     'end': '%>'
     'endCaptures':
       '0':
-        'name': 'punctuation.definition.tag.buffer.output.unescaped.end'
+        'name': 'punctuation.definition.tag.buffer.js.output.unescaped.end'
     'patterns': [
       {
         'include':'source.js'
       }
     ]
-    'name': 'ejs.unescaped.output'
+    'name': 'ejs.unescaped.js.output'
   }
   {
     'begin': '<%='
     'beginCaptures':
       '0':
-        'name': 'punctuation.definition.tag.buffer.output.escape.begin'
+        'name': 'punctuation.definition.tag.buffer.js.output.escape.begin'
     'end': '%>'
     'endCaptures':
       '0':
-        'name': 'punctuation.definition.tag.buffer.output.escape.end'
+        'name': 'punctuation.definition.tag.buffer.js.output.escape.end'
     'patterns': [
       {
         'include':'source.js'
       }
     ]
-    'name': 'ejs.escape.output'
+    'name': 'ejs.escape.js.output'
   }
   {
     'begin': '<% ([^%>]+)'
