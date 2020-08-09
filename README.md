@@ -2,6 +2,10 @@
 
 The current package, language-ejs, is non-functional and needed to be improved into a working standard. This is EJS-2, the working EJS syntax highlighting grammar for the Atom editor.
 
+## Installation
+
+Currently, this is a development install and is done manually. Go to your Atom's package folder (defaults to /Users/YourUsername/.atom/packages), create a folder named `language-ejs-2` and extract this repository into that folder. Reload Atom.
+
 ## Overriding the HTML Syntax for EJS file types
 
 Usually, when you have a defined `<html>` tag in your document, then even if the file type is .ejs HTML will still be used as the default syntax highlighting. You can override this by editing your Atom's core config.
