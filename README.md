@@ -21,3 +21,4 @@ Now all EJS file types will use the proper syntax highlighting defined by this A
 ## Screenshot
 
 ![EJS Syntax Highlights for Atom](https://i.imgur.com/WywKj8h.png)
+![EJS Syntax Highlights for Atom](https://i.imgur.com/L3m4CId.png)
