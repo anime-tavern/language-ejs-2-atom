@@ -26,3 +26,5 @@ Now all EJS file types will use the proper syntax highlighting defined by this A
 
 ![EJS Syntax Highlights for Atom](https://i.imgur.com/WywKj8h.png)
 ![EJS Syntax Highlights for Atom](https://i.imgur.com/L3m4CId.png)
+
+Made for use in Anime Tavern's development. Report issues to the Issues tab and we'll get it solved.
